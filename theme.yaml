@@ -1,0 +1,11 @@
+id: PandaPro
+name: PandaPro
+author:
+  name: 羽三
+  website: https://www.liaocp.cn/
+description: 移植主题：https://www.nicetheme.cn/store/pandapro
+logo:
+website: https://github.com/halo-dev/halo-theme-hshan
+repo: https://github.com/halo-dev/halo-theme-hshan
+version: 1.0
+require: 1.3.2

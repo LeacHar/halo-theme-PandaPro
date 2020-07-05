@@ -1,0 +1,240 @@
+# configurations
+# 详情请参考：https://halo.run/develop/theme.html#settings-yaml
+genernal:
+  label: 基本设置
+  items:
+    dark_mode:
+      name: dark_mode
+      label: 是否开启深夜模式
+      type: radio
+      data-type: bool
+      default: false
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
+    default_thumbnail_enable:
+      name: dark_mode
+      label: 文章无封面时，是否显示缩略图
+      type: radio
+      data-type: bool
+      default: true
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
+    default_thumbnail:
+      name: default_thumbnail
+      label: 首页列表文章默认缩略图
+      type: attachment
+      default: data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7
+banner:
+  label: 轮播图设置
+  items:
+    banner_enable:
+      name: banner_enable
+      label: 是否开启轮播图
+      type: radio
+      data-type: bool
+      default: false
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
+    banner_one_img:
+      name: banner_one_img
+      label: 第一张图片地址
+      type: attachment
+      default:
+    banner_one_text:
+      name: banner_one_text
+      label: 第一张图片文字
+      type: text
+      default:
+    banner_one_href:
+      name: banner_one_href
+      label: 第一张图片跳转链接
+      type: text
+      default:
+    banner_two_img:
+      name: banner_two_img
+      label: 第二张图片地址
+      type: attachment
+      default:
+    banner_two_text:
+      name: banner_two_text
+      label: 第二张图片文字
+      type: text
+      default:
+    banner_two_href:
+      name: banner_two_href
+      label: 第二张图片跳转链接
+      type: text
+      default:
+    banner_three_img:
+      name: banner_three_img
+      label: 第三张图片地址
+      type: attachment
+      default:
+    banner_three_text:
+      name: banner_three_text
+      label: 第三张图片文字
+      type: text
+      default:
+    banner_three_href:
+      name: banner_three_href
+      label: 第三张图片跳转链接
+      type: text
+      default:
+    banner_right_img:
+      name: banner_right_img
+      label: 右边图片地址
+      type: attachment
+      default:
+    banner_right_tip:
+      name: banner_right_tip
+      label: 右边图片提示文字
+      type: text
+      default:
+    banner_right_text:
+      name: banner_right_text
+      label: 右边图片文字
+      type: text
+      default:
+    banner_right_href:
+      name: banner_right_href
+      label: 右边图片跳转链接
+      type: text
+      default:
+sidebar:
+  label: 侧边栏
+  items:
+    author_bg:
+      name: author_bg
+      label: 侧边栏作者信息北背景图
+      type: attachment
+      default: data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7
+    days_of_site:
+      name: days_of_site
+      label: 建站日期
+      type: text
+      description: '填入起始时间，格式：月/日/年，如08/20/2018 12:00:00'
+      default: 1/21/2018
+    post_recommend:
+      name: post_recommend
+      label: 推荐文章分类id
+      type: text
+      description: 填写推荐分类ID，可以使用系统默认生成ID为0的分类作为推荐分类，也可以新建一个分类作为推荐分类
+      default: 0
+ad:
+  label: 广告图设置
+  items:
+    home_ad_enable:
+      name: home_ad_enable
+      label: 是否显示首页下方广告图
+      type: radio
+      data-type: bool
+      default: true
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
+    home_ad_img:
+      name: home_ad_img
+      label: 首页下方广告图
+      type: attachment
+      default: data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7
+    home_ad_href:
+      name: home_ad_href
+      label: 首页下方广告跳转地址
+      type: text
+      default: /
+    siderbar_ad_enable:
+      name: siderbar_ad_enable
+      label: 是否显示侧边栏广告图
+      type: radio
+      data-type: bool
+      default: true
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
+    siderbar_ad_img:
+      name: siderbar_ad_img
+      label: 侧边栏广告图
+      type: attachment
+      default: data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7
+    siderbar_ad_href:
+      name: siderbar_ad_href
+      label: 侧边栏广告跳转地址
+      type: text
+      default: /
+post:
+  label: 文章设置
+  items:
+    reward_enable:
+      name: reward_enable
+      label: 是否显示收款码
+      type: radio
+      data-type: bool
+      default: true
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
+    reward:
+      name: reward
+      label: 打赏收款码
+      type: attachment
+      default: data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7
+footer:
+  label: 页脚设置
+  items:
+    qq_qun_enable:
+      name: qq_qun_enable
+      label: 是否开启QQ群图片展示
+      type: radio
+      data-type: bool
+      default: true
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
+    qq_qun_text:
+      name: qq_qun_text
+      label: QQ群文字描述
+      type: text
+      default: 欢迎加入
+    qq_qun_img:
+      name: qq_qun_img
+      label: QQ群图片
+      type: attachment
+      default: data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7
+    wechat_qun_enable:
+      name: wechat_qun_enable
+      label: 是否开启微信群图片展示
+      type: radio
+      data-type: bool
+      default: true
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
+    wechat_qun_text:
+      name: wechat_qun_text
+      label: 微信群文字描述
+      type: text
+      default: 欢迎加入
+    wechat_qun_img:
+      name: wechat_qun_img
+      label: 微信群图片
+      type: attachment
+      default: data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7
