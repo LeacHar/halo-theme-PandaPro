@@ -17,9 +17,11 @@
     <#if is_post?? && is_post>
 
         <#list categories as c>
+            <#if c.id?c != settings.post_recommend>
             <span class="sep">›</span> <span itemprop="itemListElement"><a
                     href="${c.fullPath!}" itemprop="item"><span
                         itemprop="name">${c.name!}</span></a></span>
+            </#if>
         </#list>
 
         <span class="sep">›</span> <span itemprop="itemListElement"><a

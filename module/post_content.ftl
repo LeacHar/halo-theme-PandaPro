@@ -4,7 +4,9 @@
             <#if post.categories?? && post.categories?size gt 0>
                 <div class="">
                     <#list post.categories as category>
+                        <#if category.id?c != settings.post_recommend>
                         <a href="${category.fullPath!}" class="d-inline-block"><span class="d-block badge badge-primary">#${category.name!}#</span></a>
+                        </#if>
                     </#list>
                 </div>
             </#if>
