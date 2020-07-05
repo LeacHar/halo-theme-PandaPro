@@ -50,7 +50,7 @@
                             <#if post.categories?? && post.categories?size gt 0>
                                 <div class="d-inline-block mx-1 mx-md-2"><i class="text-primary">—</i></div>
                                 <#list post.categories as category>
-                                    <#if category.slug == "recommend">
+                                    <#if category.id?c != settings.post_recommend>
                                         <#continue>
                                     </#if>
                                     <a href="${category.fullPath!}"
