@@ -3,14 +3,18 @@
         <div class="d-lg-flex flex-md-fill align-items-lg-center">
             <div class="d-lg-flex flex-lg-column mr-lg-4">
                 <div class="footer-menu">
-                    <@linkTag method="list">
-                        <ul>
-                            <#list links as link>
-                                <li id="menu-item-4963"
-                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4963"><a
-                                            href="${link.url!}" target="_blank" title="${link.name!}">${link.name!}</a></li>
-                            </#list>
-                        </ul>
+                    <@linkTag method="listTeams">
+                        <#list teams as item>
+                            <ul>
+                                <#if item.team == "home">
+                                    <#list item.links as link>
+                                        <li id="menu-item-4963"
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4963"><a
+                                                    href="${link.url!}" target="_blank" title="${link.name!}">${link.name!}</a></li>
+                                    </#list>
+                                </#if>
+                            </ul>
+                        </#list>
                     </@linkTag>
                 </div>
                 <div class="footer-copyright text-xs">
