@@ -3,7 +3,7 @@
     <div class="card-body">
         <div class="list-grid list-rounded my-n2">
             <@postTag method="listByCategoryId" categoryId="${settings.post_recommend}">
-                <#list posts as p>
+                <#list posts?sort_by("visits")?reverse as p>
                     <div class="list-item py-2">
                         <#if settings.default_thumbnail_enable>
                             <div class="media media-3x2 col-4 mr-3">
