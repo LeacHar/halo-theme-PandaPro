@@ -1,3 +1,4 @@
+<#macro header title>
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -75,3 +76,4 @@
     <meta name="msapplication-TileImage"
           content="${options.blog_favicon!}">
 </head>
+</#macro>

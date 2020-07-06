@@ -1,5 +1,5 @@
-<#assign title="友情链接  - ${blog_title!}">
 <#include "module/header.ftl">
+<@header title="友情链接  - ${blog_title!}"/>
 
 <body class="page-template page-template-pages page-template-page-links page-template-pagespage-links-php page page-id-5 <#if settings.dark_mode>nice-dark-mode</#if>"">
 

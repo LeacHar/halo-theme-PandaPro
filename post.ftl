@@ -1,5 +1,5 @@
-<#assign title="${post.title!} - ${blog_title!}">
 <#include "module/header.ftl">
+<@header title="${post.title!} - ${blog_title!}"/>
 
 <body class="home blog <#if settings.dark_mode>nice-dark-mode</#if>">
 

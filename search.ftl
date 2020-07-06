@@ -1,5 +1,5 @@
-<#assign title="搜索结果页 - ${keyword!} - ${blog_title!}">
 <#include "module/header.ftl">
+<@header title="搜索结果页 - ${keyword!} - ${blog_title!}"/>
 
 <body class="home blog <#if settings.dark_mode>nice-dark-mode</#if>">
 
