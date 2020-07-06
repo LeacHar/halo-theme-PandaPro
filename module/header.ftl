@@ -62,7 +62,26 @@
           media="all">
     <link rel="stylesheet" id="nicetheme-style-css" href="${theme_base!}/source/css/style.css" type="text/css"
           media="all">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlightjs@9.12.0/styles/idea.css">
+    <style>
+        .post pre {
+            padding: 0 !important;
+        }
+    </style>
+    <#if settings.dark_mode>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlightjs@9.16.2/styles/atom-one-dark.css">
+        <style>
+            .hljs {
+                background: #313435 !important;
+            }
+        </style>
+    <#else>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlightjs@9.16.2/styles/atom-one-light.css">
+        <style>
+            .hljs {
+                background: #fdfbfb !important;
+            }
+        </style>
+    </#if>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery-migrate@1.4.1/dist/jquery-migrate.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.min.js"></script>
