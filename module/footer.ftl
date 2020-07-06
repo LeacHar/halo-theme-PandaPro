@@ -31,7 +31,6 @@
         </div>
     </div>
 </footer>
-<@global.footer />
 <a href="javascript:void(0)" id="scroll_to_top" class="btn btn-primary btn-icon scroll-to-top"><span><i
                 class="text-lg iconfont icon-arrow-up-fill"></i></span></a>
 <div class="mobile-overlay"></div>
@@ -44,15 +43,19 @@
 <script type="text/javascript" src="${theme_base!}/source/js/resizesensor.min.js"></script>
 <script type="text/javascript" src="${theme_base!}/source/js/theia-sticky-sidebar.min.js"></script>
 <script type="text/javascript" src="${theme_base!}/source/js/nicetheme.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/highlightjs@9.12.0/highlight.pack.min.js"></script>
 <script>
     <#if settings.days_of_site??>
-    var urodz= new Date("${settings.days_of_site}");  //建站时间
+    //建站时间
+    var urodz= new Date("${settings.days_of_site}");
     var now = new Date();
     var ile = now.getTime() - urodz.getTime();
     var dni = Math.floor(ile / (1000 * 60 * 60 * 24));
     $("#days_of_site").html(dni);
     </#if>
+    // 代码高亮
+    hljs.initHighlightingOnLoad();
 </script>
-
+<@global.footer />
 </body>
 </html>
