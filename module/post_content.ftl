@@ -18,7 +18,9 @@
                 </div>
                 <div class="ml-auto text-sm">
                     <span class="mx-1"><i class="text-md iconfont icon-eye-line mx-1"></i><small>${post.visits}</small></span>
+                    <#if !post.disallowComment!false>
                     <a class="mx-1" href="#comments"><i class="text-md iconfont icon-chat--line mx-1"></i><small>${post.commentCount!}</small></a>
+                    </#if>
                 </div>
             </div>                            <div class="border-theme bg-primary"></div>
         </div>
@@ -94,6 +96,7 @@
         </section>
     </@postTag>
 </#if>
+<#include "tag.ftl" >
 
 <#include "comment.ftl">
 <@comment post,"post" />
