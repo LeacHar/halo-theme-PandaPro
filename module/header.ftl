@@ -96,5 +96,10 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery-migrate@1.4.1/dist/jquery-migrate.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/scrollreveal@4.0.6/dist/scrollreveal.min.js"></script>
+    <style>
+        .load-hide, .widget, .post, .list-related, .post-tags, .comments, .breadcrumbs {
+            opacity: 1;
+        }
+    </style>
 </head>
 </#macro>

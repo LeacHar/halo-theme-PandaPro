@@ -1,7 +1,7 @@
 <div class="list-home list-grid list-grid-padding">
 <#if posts?? && posts.getTotalElements() gt 0>
     <#list posts.content as post>
-        <div class="list-item block card-plain" data-scroll-reveal="enter bottom over 1s and move 100px">
+        <div class="load-hide list-item block card-plain" data-scroll-reveal="enter bottom over 1s and move 100px">
             <#if post.thumbnail?? && post.thumbnail!=''>
                 <div class="media media-3x2 col-4 col-md-4">
                     <a class="media-content"
@@ -25,7 +25,7 @@
                        title="${post.title!}" class="list-title text-lg h-2x">
                         ${post.title!}</a>
                     <div class="list-desc d-none d-md-block text-sm text-secondary my-3">
-                        <div class="h-2x ">
+                        <div class="h-2x">
                             ${post.summary!}
                         </div>
                     </div>
