@@ -99,8 +99,8 @@
 <#include "tag.ftl" >
 
 <#include "comment.ftl">
-<@comment post,"post" />
-
-
-
-
+<#if is_post??>
+    <@comment post,"post" />
+<#elseif is_sheet??>
+    <@comment sheet,"sheet" />
+</#if>

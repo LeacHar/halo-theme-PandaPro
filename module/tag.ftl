@@ -1,5 +1,5 @@
 <@tagTag method="listByPostId" postId="${post.id}">
-    <#if (tags?size > 0)>
+    <#if tags?size gt 0>
         <div class="post-tags block d-flex text-sm p-4">
             <i class="text-xl text-primary iconfont icon-price-tag--line mr-3"></i>
             <div class="flex-fill">

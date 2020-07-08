@@ -51,11 +51,8 @@
                                 <div class="d-inline-block mx-1 mx-md-2"><i class="text-primary">—</i></div>
                                 <#list post.categories as category>
                                     <#if category.id?c != settings.post_recommend>
-                                        <#continue>
+                                        <a href="${category.fullPath!}" title="${category.name!}">${category.name!}</a>
                                     </#if>
-                                    <a href="${category.fullPath!}"
-                                       title="${category.name!}">${category.name!}</a>
-                                    <#break>
                                 </#list>
                             </#if>
 
