@@ -85,6 +85,9 @@
 
     </div>
 </div>
+
+<#include "tag.ftl" >
+
 <#if post.tags?? && post.tags[0]??>
     <@postTag method="listByTagId" tagId="${post.tags[0].id}">
         <section class="list-related"><div class="my-3">
@@ -107,7 +110,6 @@
         </section>
     </@postTag>
 </#if>
-<#include "tag.ftl" >
 
 <#include "comment.ftl">
 <#if is_post??>
