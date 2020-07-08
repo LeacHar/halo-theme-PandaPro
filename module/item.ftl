@@ -1,4 +1,4 @@
-<div class="list-home list-grid list-grid-padding">
+<div class="list-home list-grid list-grid-padding load-hidden">
 <#if posts?? && posts.getTotalElements() gt 0>
     <#list posts.content as post>
         <div class="list-item block card-plain" data-scroll-reveal="enter bottom over 1s and move 100px">

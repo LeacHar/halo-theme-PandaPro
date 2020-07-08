@@ -82,9 +82,6 @@
             }
         </style>
     </#if>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery-migrate@1.4.1/dist/jquery-migrate.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.min.js"></script>
     <link rel="icon"
           href="${options.blog_favicon!}"
           sizes="32x32">
@@ -95,5 +92,14 @@
           href="${options.blog_favicon!}">
     <meta name="msapplication-TileImage"
           content="${options.blog_favicon!}">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery-migrate@1.4.1/dist/jquery-migrate.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/scrollreveal@4.0.6/dist/scrollreveal.min.js"></script>
+    <style>
+        .load-hidden, .widget, .post, .list-related, .post-tags, .comments, .breadcrumbs {
+            visibility: hidden;
+        }
+    </style>
 </head>
 </#macro>

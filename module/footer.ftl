@@ -44,7 +44,6 @@
 <script type="text/javascript" src="${theme_base!}/source/js/theia-sticky-sidebar.min.js"></script>
 <script type="text/javascript" src="${theme_base!}/source/js/nicetheme.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/highlightjs@9.12.0/highlight.pack.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/scrollreveal@4.0.6/dist/scrollreveal.min.js"></script>
 <script>
     <#if settings.days_of_site??>
     //建站时间
@@ -56,7 +55,6 @@
     </#if>
     // 代码高亮
     hljs.initHighlightingOnLoad();
-
     // 页面加载动画
     var option =  {
         origin: 'bottom',
@@ -71,6 +69,7 @@
     ScrollReveal().reveal('.list-related', option)
     ScrollReveal().reveal('.post-tags', option)
     ScrollReveal().reveal('.comments', option)
+    ScrollReveal().reveal('.breadcrumbs', option)
 </script>
 <@global.footer />
 </body>

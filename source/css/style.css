@@ -6036,3 +6036,12 @@ Dark mode uc sidebar style
 .nice-dark-mode .mobile-sidebar-menu .sub-menu li.current-menu-parent>a {
     color: #2C63FF;
 }
+
+.post-copyright {
+    border: 1px solid #FFC107;
+    padding: 10px;
+    font-size: 14px;
+    background: #fffcdd;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}

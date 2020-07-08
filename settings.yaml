@@ -182,7 +182,7 @@ post:
       label: 是否显示收款码
       type: radio
       data-type: bool
-      default: true
+      default: false
       options:
         - value: true
           label: 开启
@@ -193,6 +193,22 @@ post:
       label: 打赏收款码
       type: attachment
       default: data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7
+    post_copyright_enable:
+      name: post_copyright_enable
+      label: 开启文章声明
+      type: radio
+      data-type: bool
+      default: false
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
+    post_copyright_content:
+      name: post_copyright_content
+      label: 声明内容，支持html
+      type: textarea
+      default:
 footer:
   label: 页脚设置
   items:

@@ -39,7 +39,11 @@
             <div class="nc-light-gallery">
                 ${post.formatContent!}
             </div>
-
+            <#if settings.post_copyright_enable!>
+                <div class="post-copyright">
+                    ${settings.post_copyright_content!}
+                </div>
+            </#if>
         </div>
         <div id="post-share-section" class="d-lg-flex align-items-lg-center flex-lg-fill mt-3 mt-lg-3">
             <#--<a href="javascript:;" class=" btn-like btn-link-like mr-4" data-action="like" data-id="4621">
@@ -59,7 +63,6 @@
                     </div>
                 </div>
             </#if>
-
             <div class="flex-fill"></div>
             <div class="post-share-action mt-4 mt-lg-0">
                 <button class="btn btn-light btn-light btn-icon btn-rounded">
