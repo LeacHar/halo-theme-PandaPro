@@ -97,7 +97,7 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/scrollreveal@4.0.6/dist/scrollreveal.min.js"></script>
     <style>
-        .load-hide, .widget, .post, .list-related, .post-tags, .comments, .breadcrumbs {
+        .load-hide, .widget, .post, .list-related, .post-tags, .comments, .breadcrumbs, .category-bg {
             opacity: 1;
         }
     </style>

@@ -71,6 +71,7 @@
     ScrollReveal().reveal('.post-tags', option)
     ScrollReveal().reveal('.comments', option)
     ScrollReveal().reveal('.breadcrumbs', option)
+    ScrollReveal().reveal('.category-bg', option)
 </script>
 <@global.footer />
 </body>

@@ -1,4 +1,4 @@
-<div class="list-cover list-rounded mb-3 mb-md-4">
+<div class="list-cover list-rounded mb-3 mb-md-4 category-bg">
     <div class="list-item list-overlay-content overlay-hover bg-dark">
         <div class="media media-21x9">
             <div class="media-content"
