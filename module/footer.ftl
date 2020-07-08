@@ -60,7 +60,8 @@
         origin: 'bottom',
         distance: "1.25rem",
         useDelay: "always",
-        interval: 50
+        interval: 50,
+        opacity: 0
     }
     ScrollReveal().reveal('.list-home .list-item', option)
     ScrollReveal().reveal('.list-home .list-item', option)
