@@ -2906,6 +2906,7 @@ List hover
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
+    visibility:visible;
 }
 
 .h-3x {
