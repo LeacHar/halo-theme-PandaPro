@@ -5,7 +5,7 @@
             <div class="flex-fill">
                 <#list tags as tag>
                     <span class="d-inline-block text-muted mr-2"># <a
-                            href="${context!}/tags/${tag.slugName!}" rel="tag">${tag.name}</a></span>
+                            href="${tag.fullPath!}" rel="tag">${tag.name}</a></span>
                 </#list>
             </div>
         </div>

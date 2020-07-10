@@ -1,5 +1,5 @@
 <#include "module/header.ftl">
-<@header title="${category.name} - ${blog_title!}"/>
+<@header title="${tag.name} - ${blog_title!}"/>
 
 <body class="home blog <#if settings.dark_mode>nice-dark-mode</#if>">
 
@@ -13,8 +13,6 @@
 
         <div class="row" style="transform: none;">
             <div class="col-lg-8">
-
-                <#include "module/category_info.ftl">
 
                 <#include "module/item.ftl">
 

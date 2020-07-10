@@ -8,6 +8,12 @@
                     itemprop="name">${category.name!}</span></a></span>
     </#if>
 
+    <#if is_tag?? && is_tag>
+        <span class="sep">›</span> <span itemprop="itemListElement"><a
+                href="${tag.fullPath!}" itemprop="item"><span
+                    itemprop="name">${tag.name!}</span></a></span>
+    </#if>
+
     <#if is_sheet?? && is_sheet>
         <span class="sep">›</span> <span itemprop="itemListElement"><a
                 href="${post.fullPath!}" itemprop="item"><span

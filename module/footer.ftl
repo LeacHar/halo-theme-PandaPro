@@ -60,9 +60,14 @@
         origin: 'bottom',
         distance: "1.25rem",
         useDelay: "always",
-        interval: 50
+        interval: 50,
+        beforeReveal: function (el) {
+            var els = $(el).find(".h-2x");
+            for (var i = 0; i < els.length; i++) {
+                $(els[i]).css("opacity", "1")
+            }
+        }
     }
-    ScrollReveal().reveal('.list-home .list-item', option)
     ScrollReveal().reveal('.list-home .list-item', option)
     ScrollReveal().reveal('.widget', option)
     ScrollReveal().reveal('.post', option)
