@@ -29,7 +29,7 @@
                                     <div class="media media-2x1">
                                         <a class="media-content" target="_blank"
                                            href="${settings.banner_two_href!}"
-                                           style='background-image:url("data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7")'
+                                           style='background-image:url("${settings.banner_two_img!}")'
                                            data-bg=" url(${settings.banner_two_img!})"
                                            data-nclazyload="true">
                                             <div class="overlay-grad"></div>
@@ -48,7 +48,7 @@
                                     <div class="media media-2x1">
                                         <a class="media-content" target="_blank"
                                            href="${settings.banner_three_href!}"
-                                           style='background-image:url("data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7")'
+                                           style='background-image:url("${settings.banner_three_img!}")'
                                            data-bg=" url(${settings.banner_three_img!})"
                                            data-nclazyload="true">
                                             <div class="overlay-grad"></div>
