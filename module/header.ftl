@@ -101,7 +101,7 @@
             opacity: 1;
         }*/
 
-        html.sr .load-hidden, .widget, .post, .list-related, .post-tags, .comments, .breadcrumbs, .category-bg {
+        html.sr .load-hidden, .widget, .post, .list-related, .post-tags, .comments, .breadcrumbs, .category-bg, .list-banner {
             visibility: hidden;
         }
     </style>
