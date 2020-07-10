@@ -21,8 +21,8 @@
                     Copyright © 2020 <a href="${blog_url!}" title="${blog_title!}"
                                         rel="home">${blog_title!}</a>
                     . Designed by <a href="https://www.nicetheme.cn" title="nicetheme奈思主题-资深的原创WordPress主题开发团队" target="_blank" rel="nofollow">nicetheme</a>
-                    . Power by <a href="https://halo.run/" title="An excellent open source blog publishing application." target="_blank" rel="nofollow">Halo</a>.
-                    . Theme by <a href="https://www.liaocp.cn/" title="hexo-theme-pandapro" target="_blank" rel="nofollow">PandaPro</a>.
+                    . Power by <a href="https://halo.run/" title="An excellent open source blog publishing application." target="_blank" rel="nofollow">Halo</a>
+                    . Theme by <a href="https://www.liaocp.cn/" title="hexo-theme-pandapro" target="_blank" rel="nofollow">PandaPro</a>
                 </div>
             </div>
             <div class="flex-lg-fill"></div>
