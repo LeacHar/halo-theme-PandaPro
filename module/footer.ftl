@@ -77,6 +77,7 @@
     ScrollReveal().reveal('.comments', option)
     ScrollReveal().reveal('.breadcrumbs', option)
     ScrollReveal().reveal('.category-bg', option)
+    ScrollReveal().reveal('.list-banner', option)
 </script>
 <@global.footer />
 </body>
