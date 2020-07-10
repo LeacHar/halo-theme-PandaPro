@@ -81,7 +81,7 @@
                                     <div class="list-title text-sm text-muted">${settings.banner_right_tip!}</div>
                                 </div>
                                 <div class="list-footer text-xl text-white mt-1">
-                                    ${settings.banner_three_text!}
+                                    ${settings.banner_right_text!}
                                 </div>
                             </a>
                         </div>
