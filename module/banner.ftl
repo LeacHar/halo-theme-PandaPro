@@ -1,6 +1,6 @@
 <#if settings.banner_enable>
     <#if posts.number == 0>
-        <div class="list-banner list-rounded banner-style-3 banner-has-nav pt-3 pt-md-5">
+        <div class="list-banner list-rounded banner-style-3 banner-has-nav pt-3 pt-md-5 load-hidden">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8">
