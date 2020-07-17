@@ -17,7 +17,7 @@
 							<div class="block p-3 d-flex flex-fill align-items-center m-0">
 
 								<a href="${link.url!}" target="_blank" class="flex-avatar w-64 mr-3">
-									<img src="<#if link.logo??>${theme_base}/source/images/default-avatar.png<#else>${link.logo!}</#if>"></a>
+									<img src="<#if link.logo??>${link.logo!}<#else>${theme_base}/source/images/default-avatar.png</#if>"></a>
 
 								<div class="flex-fill">
 									<a href="${link.url!}" target="_blank" class="h6 h-1x m-0" title="${link.description!}">${link.name!}</a>
