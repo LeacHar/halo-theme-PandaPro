@@ -1,9 +1,9 @@
 <div id="recommended_posts-3" class="card card-sm widget Recommended_Posts">
-    <div class="card-header widget-header"><span>最热文章<i class="bg-primary"></i></span></div>
+    <div class="card-header widget-header"><span>最新文章<i class="bg-primary"></i></span></div>
     <div class="card-body">
         <div class="list-grid list-rounded my-n2">
             <@postTag method="latest" top="5">
-                <#list posts?sort_by("visits")?reverse as p>
+                <#list posts as p>
                     <div class="list-item py-2">
                         <#if settings.default_thumbnail_enable>
                             <div class="media media-3x2 col-4 mr-3">
